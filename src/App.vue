@@ -3,43 +3,12 @@
 
     <div class="page-wrapper">
         <!-- HEADER DESKTOP-->
-        <header class="header-desktop3 d-none d-lg-block">
-            <div class="section__content section__content--p35">
-                <div class="header3-wrap">
-                    <div class="header__logo">
-                        <a href="#">
-                            <img src="@/assets/images/icon/logo-white.png" alt="CoolAdmin" />
-                        </a>
-                    </div>
-                    <div class="header__navbar">
-                        <ul class="list-unstyled">
-
-                            <li>
-                                <a href="#">
-                                    <i class="fas fa-book"></i>
-                                    <span class="bot-line"></span>Livres</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fas fa-copy"></i>
-                                    <span class="bot-line"></span>Genre</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fas fa-cogs"></i>
-                                    <span class="bot-line"></span>Admin</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </header>
+        <CoolBookNav />
         <!-- END HEADER DESKTOP-->
 
         <!-- PAGE CONTENT-->
         <div class="page-content--bgf7">
-
+            <router-view></router-view>
             <!-- WELCOME-->
             <section class="welcome p-t-10">
                 <div class="container">
@@ -79,11 +48,13 @@
 
 <script>
 
+import CoolBookNav from './components/CoolBookNav.vue'
+
 
 export default {
   name: 'App',
   components: {
-
+      CoolBookNav
   }
 }
 </script>
