@@ -8,15 +8,13 @@
 
         <!-- PAGE CONTENT-->
         <div class="page-content--bgf7">
-            <router-view></router-view>
+            
             <!-- WELCOME-->
             <section class="welcome p-t-10">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="title-4">Titre de la section
-                            </h1>
-                            <hr class="line-seprate">
+                            <router-view></router-view>
                         </div>
                     </div>
                 </div>

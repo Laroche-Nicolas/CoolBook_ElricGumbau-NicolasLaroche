@@ -23,7 +23,7 @@ Vue.use(VueRouter)
 const routes = [
   { 
     path: '/', name:'home',
-    component: ()=> import('./components/CoolBookHome.vue')
+    component: ()=> import('./components/CoolBookGetBooks.vue')
   },
   { path: '/books', name:'books',
    component: ()=> import('./components/CoolBookGetBooks.vue')},
