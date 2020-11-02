@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
     <div class="page-wrapper">
         <!-- HEADER DESKTOP-->
         <CoolBookNav />
@@ -36,27 +35,20 @@
 
         </div>
 
+
     </div>
-
-
-
-
   </div>
 </template>
 
 <script>
-
-import CoolBookNav from './components/CoolBookNav.vue'
-
+import CoolBookNav from "./components/CoolBookNav.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-      CoolBookNav
-  }
-}
+    CoolBookNav,
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
