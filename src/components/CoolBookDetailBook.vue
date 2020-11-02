@@ -34,7 +34,6 @@ export default {
     async fectOneBook(bookId){
     let book = await axios.get(`${API_BOOKS_ENDPOINT}${bookId}`);
     this.oneBook = book.data
-    console.log(this.oneBook)
     }
   },
   created() {

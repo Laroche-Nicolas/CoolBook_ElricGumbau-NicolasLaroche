@@ -73,12 +73,10 @@ export default {
     async fetchAllBooks() {
       let books = await axios.get(`${API_BOOKS_ENDPOINT}books`);
       this.allBooks = books.data;
-      console.log(this.allBooks);
     },
     async fetchAllGenres() {
       let genres = await axios.get(`${API_BOOKS_ENDPOINT}genres`);
       this.allGenres = genres.data;
-      console.log(this.allGenres);
     },
     goToOneBook(bookId) {
       this.$router.push({ name: "bookDetail", params: { bookId } });
