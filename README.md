@@ -1,4 +1,4 @@
-# vue_rover
+# CoolBook
 
 ## Project setup
 ```
